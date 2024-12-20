@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/updateTText"
+        android:layout_width="246dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/UpdateSText"
+        android:layout_width="253dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Singer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/updateTText" />
+
+    <Button
+        android:id="@+id/Updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="108dp"
+        android:onClick="UpdateTrackonClick"
+        android:text="Update Track"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateSText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

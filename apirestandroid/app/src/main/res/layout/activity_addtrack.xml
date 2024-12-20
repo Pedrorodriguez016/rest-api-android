@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/titleText"
+        android:layout_width="260dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/singerText"
+        android:layout_width="258dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Singer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="190dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="104dp"
+        android:onClick="AddTrackonClick"
+        android:text="ADD TRACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singerText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
